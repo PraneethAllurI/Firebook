@@ -74,7 +74,8 @@ function Marketplace() {
 
                 <h1 className="font-medium text-2xl">Today's picks</h1>
                 <p className="flex items-center text-gray-500 mr-5">
-                    <LocationMarkerIcon className="h-5" />Near you</p>
+                    <LocationMarkerIcon className="h-5" />Near you
+                </p>
             </div>
             {marketlist}
         </div>
