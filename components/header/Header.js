@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
-
 import {
     BellIcon,
     HomeIcon,
@@ -18,7 +16,6 @@ import { signOut, useSession } from "next-auth/client";
 
 function Header() {
     const [session] = useSession();
-    const router = useRouter();
     return (
 
         <div className="sticky top-0 z-50 bg-white flex
@@ -45,7 +42,7 @@ function Header() {
                     <HeaderIcon active url="/" Icon={HomeIcon} />
                     <HeaderIcon url="/videoplayer" Icon={PlayIcon} />
                     <HeaderIcon url="/marketplace" Icon={ShoppingCartIcon} />
-                    <HeaderIcon url="/groups" Icon={UserGroupIcon} />
+                    <HeaderIcon url="/friendlist" Icon={UserGroupIcon} />
                 </div>
             </div>
 
@@ -56,14 +53,15 @@ function Header() {
 
                 <div
                     className="flex justify-between items-center cursor-pointer">
-
-                    <Image
-                        className="rounded-full"
-                        src={session.user.image}
-                        width="40"
-                        height="40"
-                        layout="fixed"
-                    />
+                    <Link href='/profile'>
+                        <Image
+                            className="rounded-full"
+                            src={session.user.image}
+                            width="40"
+                            height="40"
+                            layout="fixed"
+                        />
+                    </Link>
                     <p className="hidden md:inline-flex whitespace-nowrap font-semibold pr-3 ml-2"> {session.user.name} </p>
                 </div>
                 <p

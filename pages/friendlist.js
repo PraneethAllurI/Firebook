@@ -1,6 +1,5 @@
-import { useState } from 'react';
-import Image from "next/image";
-import { CheckIcon, PlusCircleIcon } from "@heroicons/react/solid";
+import Friends from "../components/Friends";
+
 
 const friends = [
     {
@@ -55,42 +54,18 @@ const friends = [
     },
 ]
 
-function Friends() {
-    const [addFriend, setaddFriend] = useState(false);
+function FriendList() {
+
+    const friendList = friends.map(friend => (<Friends key={friend.id} friend={friend} />))
     return (
         <div className="flex-grow h-screen md:p-2 pb-44 md:mr-24
             overflow-y-auto scrollbar-hide md:ml-24">
             <div className="ml-2">
                 <h1 className="font-bold text-lg">People you may know</h1>
             </div>
-            {friends.map(friend => (
-
-                <div className=" cursor-pointer inline-block justify-between items-center sm:flex rounded-md border-1 border-gray-500 bg-white shadow-sm
-                p-5 my-5">
-                    <Image src={friend.url}
-                        className=""
-                        width={380}
-                        height={250}
-                        layout="intrinsic"
-                        alt={friend.name}
-                    />
-                    <div className="text-center ml-10">
-
-                        <h1 className="text-yellow-500 font-medium mt-5">{friend.name}</h1>
-                        <button
-                            onClick={() => setaddFriend(!addFriend)}
-                            className="rounded-full bg-yellow-400 font-medium p-2 px-5 mt-2 w-44 md:w-52">
-                            <div className="flex items-center justify-around">
-                                {addFriend ? <p className="text-xs md:text-base">Friend request sent</p> : <p className="text-xs md:text-base">Friend request</p>}
-
-                                {addFriend ? <CheckIcon className="h-5 text-green-500" /> : <PlusCircleIcon className="h-5" />}
-                            </div>
-                        </button>
-                    </div>
-                </div>
-            ))}
+            {friendList}
         </div>
     )
 }
 
-export default Friends;
+export default FriendList;
