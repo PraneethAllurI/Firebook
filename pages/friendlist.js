@@ -8,9 +8,9 @@ const friends = [
         id: 1,
     },
     {
-        name: "jeff bezos",
-        url: "https://images.unsplash.com/photo-1571844307880-751c6d86f3f3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d29tYW4lMjB3b3JrfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
-        id: 2,
+        name: "Dad's little Princess",
+        url: "https://images.unsplash.com/photo-1524083615948-77168224375a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8&w=1000&q=80",
+        id: 10,
     },
     {
         name: "mukesh ambani",
@@ -48,9 +48,9 @@ const friends = [
         id: 9,
     },
     {
-        name: "Dad's little Princess",
-        url: "https://images.unsplash.com/photo-1524083615948-77168224375a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8&w=1000&q=80",
-        id: 10,
+        name: "jeff bezos",
+        url: "https://images.unsplash.com/photo-1571844307880-751c6d86f3f3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d29tYW4lMjB3b3JrfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80",
+        id: 2,
     },
 ]
 

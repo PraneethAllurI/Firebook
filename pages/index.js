@@ -8,7 +8,7 @@ import Widgets from '../components/Widgets'
 import { db } from '../fib'
 import Videoplayer from '../components/VideoPlay'
 import MarketPlace from '../components/Market'
-import Groups from './groups'
+/* import Groups from './groups' */
 import FriendList from '../pages/friendlist'
 import Profile from './profile'
 

@@ -72,7 +72,7 @@ function Marketplace() {
         overflow-y-auto scrollbar-hide md:ml-24">
             <div className="flex items-center justify-between mt-5">
 
-                <h1 className="font-medium text-2xl">Today's picks</h1>
+                <h1 className="font-medium text-2xl">Today<span>&apos;</span>s picks</h1>
                 <p className="flex items-center text-gray-500 mr-5">
                     <LocationMarkerIcon className="h-5" />Near you
                 </p>
