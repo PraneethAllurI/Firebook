@@ -3,7 +3,7 @@ import { useSession } from "next-auth/client";
 import { EmojiHappyIcon } from "@heroicons/react/outline"
 import { CameraIcon, VideoCameraIcon } from "@heroicons/react/solid"
 import { useRef, useState } from "react";
-import { db, storage } from "../fib";
+import { db, storage } from "../../fib";
 import firebase from "firebase";
 
 
@@ -78,6 +78,7 @@ function InputBox() {
                     width="40"
                     height="40"
                     layout="fixed"
+                    alt={session.user.name}
                 />
                 <form className="flex flex-1 ">
                     <input

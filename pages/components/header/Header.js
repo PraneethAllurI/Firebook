@@ -53,14 +53,16 @@ function Header() {
 
                 <div
                     className="flex justify-between items-center cursor-pointer">
-                    <Link href='/profile'>
+                    <Link href="/profile">
                         <Image
                             className="rounded-full"
                             src={session.user.image}
                             width="40"
                             height="40"
                             layout="fixed"
+                            alt={session.user.name}
                         />
+
                     </Link>
                     <p className="hidden md:inline-flex whitespace-nowrap font-semibold pr-3 ml-2"> {session.user.name} </p>
                 </div>

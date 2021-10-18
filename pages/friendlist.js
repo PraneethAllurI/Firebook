@@ -1,4 +1,4 @@
-import Friends from "../components/Friends";
+import Friends from "./components/Friends";
 
 
 const friends = [

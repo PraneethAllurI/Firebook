@@ -14,12 +14,14 @@ function StoryCard({ src, profile }) {
                 height={40}
                 layout="fixed"
                 objectFit="cover"
+                alt=""
             />
             <Image
                 className="object-cover filter brightness-75
             rounded-full lg:rounded-3xl"
                 src={src}
                 layout="fill"
+                alt=""
             />
         </div>
     )

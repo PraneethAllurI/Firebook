@@ -1,6 +1,6 @@
 import { useCollection } from "react-firebase-hooks/firestore";
 import Post from './Post'
-import { db } from "../fib";
+import { db } from "../../fib";
 
 function Posts({ posts }) {
     const [realtimePosts] = useCollection(
